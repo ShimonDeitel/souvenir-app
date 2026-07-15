@@ -18,9 +18,9 @@ struct ContentView: View {
                             Text(entry.itemName).font(Theme.headlineFont)
                             Text(entry.tripTag).font(Theme.bodyFont).foregroundColor(.secondary)
                             HStack {
-                                Text("\(entry.price, specifier: \"%.1f\") $")
+                                Text("\(entry.price, specifier: "%.1f") $")
                                 Spacer()
-                                Text("\(entry.quantity, specifier: \"%.1f\")")
+                                Text("\(entry.quantity, specifier: "%.1f")")
                             }
                             .font(.caption)
                             .foregroundColor(Theme.accent)
